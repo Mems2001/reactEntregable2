@@ -1,9 +1,8 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
-
 import './App.css'
 import CardWeather from './components/CardWeather'
-import LoaderScreen from './components/LoaderScreen'
+
 
 function App() {
 
@@ -18,7 +17,7 @@ function App() {
           lon : pos.coords.longitude
         }
         setcoords1 (latlon)
-        console.log (pos)
+        // console.log (pos)
       }
 
       navigator.geolocation.getCurrentPosition (success)

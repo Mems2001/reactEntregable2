@@ -22,6 +22,8 @@ const CardWeather = ({lon , lat , backImg}) => {
   
     const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`
 
+    const [shadow, setshadow] = useState()
+
   useEffect (
     () => {
         if (lat && lon) {
@@ -42,10 +44,14 @@ const CardWeather = ({lon , lat , backImg}) => {
   useEffect (
     () => {
 
-        backImg (Weather?.weather[0].icon)
+        let a = Weather?.weather[0].icon
+        let b = String(a)[2]
+        backImg (a)
+        setshadow (b)
 
     } , [Weather?.weather[0].icon]
   )
+
 
 //   console.log (Weather)
 
@@ -61,7 +67,7 @@ if (isLoaded == false) {
 
         <h1>Weather Today:</h1>
 
-    <div className='cardW'>
+    <div className={`cardW shad${shadow}`}>
         
         <div className='locCont'>
             <span>{`${Weather?.name}, ${Weather?.sys.country}`}</span>
