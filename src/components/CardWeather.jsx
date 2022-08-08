@@ -70,8 +70,8 @@ if (isLoaded == false) {
     <div className={`cardW shad${shadow}`}>
         
         <div className='locCont'>
-            <span>{`${Weather?.name}, ${Weather?.sys.country}`}</span>
-            <span>{Weather?.weather[0].description}</span>
+            <span className='textC'>{`${Weather?.name}, ${Weather?.sys.country}`}</span>
+            <span className='textC'>{Weather?.weather[0].description}</span>
         </div>
 
         <div>
@@ -86,11 +86,11 @@ if (isLoaded == false) {
         </div>
 
         <div className='weatherInfo'>
-            <span>Feels like : {Weather?.main.feels_like}°</span>
-            <span>Min. Temperature : {Weather?.main.temp_min}°</span>
-            <span>Max. Temperature : {Weather?.main.temp_max}°</span>
-            <span>Pressure : {Weather?.main.pressure} hPa</span>
-            <span>Humidity : {Weather?.main.humidity}</span>
+            <span className='textC'>Feels like : {Weather?.main.feels_like}°</span>
+            <span className='textC'>Min. Temperature : {Weather?.main.temp_min}°</span>
+            <span className='textC'>Max. Temperature : {Weather?.main.temp_max}°</span>
+            <span className='textC'>Pressure : {Weather?.main.pressure} hPa</span>
+            <span className='textC'>Humidity : {Weather?.main.humidity}</span>
             
         </div>
 

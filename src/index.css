@@ -29,6 +29,7 @@ body {
 
 h1 {
   margin: 0;
+  text-shadow: 2px 1px #242424;
 }
 
 /* CLASES */
@@ -74,7 +75,7 @@ h1 {
 
 .locCont {
   position: absolute;
-  top: 5%;
+  top: 10%;
   display: flex;
   flex-direction: column;
   gap: 1vh;
@@ -92,7 +93,9 @@ h1 {
 }
 
 .tempText {
-  font-size: 3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px #242424;
 }
 
 img {
@@ -107,6 +110,13 @@ img {
   bottom: 7%;
   display: flex;
   flex-direction: column;
+  font-weight: 700;
+}
+
+.textC {
+  font-weight: 700;
+  text-shadow: 2px 1px #242424;
+  font-size: 1.1rem;
 }
 
 /* IMAGENES DE FONDO  */
@@ -136,28 +146,28 @@ img {
   background-image: url("https://www.wallpaperflare.com/static/912/437/137/moon-clouds-night-white-wallpaper.jpg");
 }
 .b09d {
-  background-image: url("https://www.godubrovnik.com/wp-content/uploads/rainy-day.jpg");
+  background-image: url("https://images.pexels.com/photos/268832/pexels-photo-268832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .b09n {
   background-image: url("https://www.freevector.com/uploads/vector/preview/7040/FreeVector-Rain-Background.jpg");
 }
 .b10d {
-  background-image: url("https://www.godubrovnik.com/wp-content/uploads/rainy-day.jpg");
+  background-image: url("https://images.pexels.com/photos/268832/pexels-photo-268832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .b10n {
   background-image: url("https://www.freevector.com/uploads/vector/preview/7040/FreeVector-Rain-Background.jpg");
 }
 .b11d {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/005/361/958/original/thunder-storm-lightning-rainy-weather-city-building-skyline-cityscape-illustration-vector.jpg");
+  background-image: url("https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .b11n {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/005/361/958/original/thunder-storm-lightning-rainy-weather-city-building-skyline-cityscape-illustration-vector.jpg");
+  background-image: url("https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .b13d {
-  background-image: url("https://img.freepik.com/free-vector/gradient-snowing-winter-landscape_23-2149158235.jpg?w=2000");
+  background-image: url("https://img.freepik.com/free-vector/gradient-snowing-winter-landscape_23-2149158235.jpg");
 }
 .b13n {
-  background-image: url("https://www.teahub.io/photos/full/1-17424_winter-night-wallpapers-data-src-full-294899-snow.jpg");
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/6402.png");
 }
 .b50d {
   background-image: url("https://c.wallhere.com/photos/da/1e/China_city-45207.jpg!d");
