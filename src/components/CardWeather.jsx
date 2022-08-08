@@ -68,7 +68,7 @@ const CardWeather = ({lon , lat , backImg}) => {
             <span>Feels like : {Weather?.main.feels_like}°</span>
             <span>Min. Temperature : {Weather?.main.temp_min}°</span>
             <span>Max. Temperature : {Weather?.main.temp_max}°</span>
-            <span>Pressure : {Weather?.main.pressure}</span>
+            <span>Pressure : {Weather?.main.pressure}hPa</span>
             <span>Humidity : {Weather?.main.humidity}</span>
             
         </div>
