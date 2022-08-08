@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* , *::before , *::after {
+  box-sizing: inherit;
+}
+
+body { 
+  margin: 0
+}
+
+/* CLASES */
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  text-align: center;
+  gap: 2vh ;
+  
+}
+
+.cardW {
+  height: 50vw;
+  width: 50vw;
+  border: 2px white groove;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0.5vw 0.5vw 5vw 0 black;
+}
+
+.locCont {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.tempCont {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap:4vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.tempText {
+  font-size: 3rem;
+}
+
+img {
+  height: 100%;
+  position: relative;
+  top: -10%;
+  left: -55%;
+}
+
+.weatherInfo {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGENES DE FONDO  */
+
+.b01d {
+  background-image: url("https://wallpaperaccess.com/full/3951592.jpg");
+}
+.b01n {
+  background-image: url("https://wallpaperaccess.com/full/6860094.png");
+}
+.b02d {
+  background-image: url("https://img.freepik.com/free-vector/sky-background-pastel-paper-cut-design-vector_53876-144660.jpg?w=2000");
+}
+.b02n {
+  background-image: url("https://www.wallpaperflare.com/static/912/437/137/moon-clouds-night-white-wallpaper.jpg");
+}
+.b03d {
+  background-image: url("https://img.freepik.com/free-vector/sky-background-pastel-paper-cut-design-vector_53876-144660.jpg?w=2000");
+}
+.b03n {
+  background-image: url("https://www.wallpaperflare.com/static/912/437/137/moon-clouds-night-white-wallpaper.jpg");
+}
+.b04d {
+  background-image: url("https://img.freepik.com/free-vector/sky-background-pastel-paper-cut-design-vector_53876-144660.jpg?w=2000");
+}
+.b04n {
+  background-image: url("https://www.wallpaperflare.com/static/912/437/137/moon-clouds-night-white-wallpaper.jpg");
+}
+.b09d {
+  background-image: url("https://www.godubrovnik.com/wp-content/uploads/rainy-day.jpg");
+}
+.b09n {
+  background-image: url("https://www.freevector.com/uploads/vector/preview/7040/FreeVector-Rain-Background.jpg");
+}
+.b10d {
+  background-image: url("https://www.godubrovnik.com/wp-content/uploads/rainy-day.jpg");
+}
+.b10n {
+  background-image: url("https://www.freevector.com/uploads/vector/preview/7040/FreeVector-Rain-Background.jpg");
+}
+.b11d {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/361/958/original/thunder-storm-lightning-rainy-weather-city-building-skyline-cityscape-illustration-vector.jpg");
+}
+.b11n {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/361/958/original/thunder-storm-lightning-rainy-weather-city-building-skyline-cityscape-illustration-vector.jpg");
+}
+.b13d {
+  background-image: url("https://img.freepik.com/free-vector/gradient-snowing-winter-landscape_23-2149158235.jpg?w=2000");
+}
+.b13n {
+  background-image: url("https://www.teahub.io/photos/full/1-17424_winter-night-wallpapers-data-src-full-294899-snow.jpg");
+}
+.b50d {
+  background-image: url("https://c.wallhere.com/photos/da/1e/China_city-45207.jpg!d");
+}
+.b50n {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/69f671112003711.600c61da29b55.jpeg");
+}
