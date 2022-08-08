@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import './App.css'
 import CardWeather from './components/CardWeather'
+import LoaderScreen from './components/LoaderScreen'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className={`App b${backImg}`}>
+
       
       <CardWeather lon={coords1?.lon} lat={coords1?.lat} backImg={setbackImg}/>
 

@@ -1,7 +1,10 @@
 import React, { useEffect , useState } from 'react'
 import axios from 'axios'
+import LoaderScreen from './LoaderScreen'
 
 const CardWeather = ({lon , lat , backImg}) => {
+
+    const [isLoaded, setisLoaded] = useState(false)
 
     const [units, setunits] = useState("metric")
 
@@ -23,9 +26,14 @@ const CardWeather = ({lon , lat , backImg}) => {
     () => {
         if (lat && lon) {
             
-
             axios.get(URL)
-            .then (res => setWeather(res.data))
+            .then (
+                res => 
+                {
+                    setWeather(res.data)
+                    setisLoaded(true)
+                }
+                )
             .catch (err => console.log(err))
         }
     } , [lat , lon , units]
@@ -39,9 +47,16 @@ const CardWeather = ({lon , lat , backImg}) => {
     } , [Weather?.weather[0].icon]
   )
 
-  console.log (Weather)
+//   console.log (Weather)
+
+if (isLoaded == false) {
+    return (
+        <LoaderScreen />    
+    ) 
+} else {
 
   return (
+
     <div className='container'>
 
         <h1>Weather Today:</h1>
@@ -68,7 +83,7 @@ const CardWeather = ({lon , lat , backImg}) => {
             <span>Feels like : {Weather?.main.feels_like}°</span>
             <span>Min. Temperature : {Weather?.main.temp_min}°</span>
             <span>Max. Temperature : {Weather?.main.temp_max}°</span>
-            <span>Pressure : {Weather?.main.pressure}hPa</span>
+            <span>Pressure : {Weather?.main.pressure} hPa</span>
             <span>Humidity : {Weather?.main.humidity}</span>
             
         </div>
@@ -76,6 +91,7 @@ const CardWeather = ({lon , lat , backImg}) => {
     </div>
     </div>
   )
+}
 }
 
 export default CardWeather
